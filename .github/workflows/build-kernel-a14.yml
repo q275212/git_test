@@ -28,63 +28,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - version: "5.15"
-            sub_level: 164
-            os_patch_level: 2024-09
-          - version: "5.15"
-            sub_level: 167
-            os_patch_level: 2024-11
-          - version: "5.15"
-            sub_level: 170
-            os_patch_level: 2025-01
-          - version: "5.15"
-            sub_level: 178
-            os_patch_level: 2025-03
-          - version: "5.15"
-            sub_level: 180
-            os_patch_level: 2025-05
-          - version: "5.15"
-            sub_level: 185
-            os_patch_level: 2025-07
-          - version: "5.15"
-            sub_level: 192
-            os_patch_level: 2025-10
-          - version: "6.1"
-            sub_level: 93
-            os_patch_level: 2024-09
-          - version: "6.1"
-            sub_level: 99
-            os_patch_level: 2024-10
           - version: "6.1"
             sub_level: 112
             os_patch_level: 2024-11
-          - version: "6.1"
-            sub_level: 115
-            os_patch_level: 2024-12
-          - version: "6.1"
-            sub_level: 118
-            os_patch_level: 2025-01
-          - version: "6.1"
-            sub_level: 124
-            os_patch_level: 2025-02
-          - version: "6.1"
-            sub_level: 128
-            os_patch_level: 2025-03
-          - version: "6.1"
-            sub_level: 129
-            os_patch_level: 2025-04
-          - version: "6.1"
-            sub_level: 134
-            os_patch_level: 2025-05
-          - version: "6.1"
-            sub_level: 138
-            os_patch_level: 2025-06
-          - version: "6.1"
-            sub_level: 141
-            os_patch_level: 2025-07
-          - version: "6.1"
-            sub_level: 145
-            os_patch_level: 2025-09
     uses: ./.github/workflows/gki-kernel.yml
     secrets: inherit
     with:
